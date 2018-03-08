@@ -10,12 +10,12 @@ disk).
 ## `:DiffAgainstFilesystem`
 
 Opens a diff window which diffs the buffer contents against the contents of
-the file on disk. Use |:DiffStop| to close the diff window.
+the file on disk. Use `:DiffStop` to close the diff window.
 
 ## `:DiffAgainstVCS`
 
 Opens a diff window which diffs the buffer contents against the contents of
-the file in the most recent commit in version control. Use |:DiffStop| to
+the file in the most recent commit in version control. Use `:DiffStop` to
 close the diff window. Supports git, svn, darcs, and cvs.
 
 ## `:DiffStop`
