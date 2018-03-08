@@ -1,0 +1,38 @@
+*diff-changes.txt*  Diff buffer contents against file on disk or in the VCS
+
+Author:  Jesse Luehrs <https://tozt.net/>
+License: MIT
+
+=============================================================================
+OVERVIEW                                              *diff-changes-overview*
+
+This plugin adds commands which diff the current buffer against the file it
+was loaded from, either the state on disk or the state in version control
+(similar to `vimdiff` except without requiring writing the buffer state to
+disk).
+
+=============================================================================
+COMMANDS                                              *diff-changes-commands*
+
+                                       *:DiffAgainstFilesystem*
+>
+    :DiffAgainstFilesystem
+<
+Opens a diff window which diffs the buffer contents against the contents of
+the file on disk. Use |:DiffStop| to close the diff window.
+
+                                       *:DiffAgainstVCS*
+>
+    :DiffAgainstVCS
+<
+Opens a diff window which diffs the buffer contents against the contents of
+the file in the most recent commit in version control. Use |:DiffStop| to
+close the diff window. Supports git, svn, darcs, and cvs.
+
+                                       *:DiffStop*
+>
+    :DiffStop
+<
+Closes an active diff window.
+
+ vim:tw=78:et:ft=help:norl:
